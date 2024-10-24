@@ -216,6 +216,8 @@ type KonnectivityServerSpec struct {
 	Image string `json:"image,omitempty"`
 	// Resources define the amount of CPU and memory to allocate to the Konnectivity server.
 	Resources *corev1.ResourceRequirements `json:"resources,omitempty"`
+	// Mode defines the connectivity use by the Konnectivity service
+	Mode string `json:"mode,omitempty"
 	ExtraArgs ExtraArgs                    `json:"extraArgs,omitempty"`
 }
 
